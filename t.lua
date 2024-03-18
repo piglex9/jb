@@ -13203,8 +13203,8 @@ local function loadup()
                     local cfgs = {}
                     for i,v in next, listfiles(configFolder) do
                         if v and string.find(v, "json") then
-                            local _, cfg_json = unpack(table.split(v, "\\"))
-                            local cfg_name = unpack(table.split(cfg_json, ".json"))
+                            local _, cfg_json = unpack(string.split(v, "\\"))
+                            local cfg_name = unpack(string.split(cfg_json, ".json"))
                             table.insert(cfgs, cfg_name)
                         else
                             print(("Couldn't recognise path: %s. Is this a JSON type file?"):format(v))
