@@ -12347,7 +12347,7 @@ local function loadup()
             local function airdropMarkers()
                 local image = getsynasset("icetray/resource/airdrop.png")
                 if not image then
-                    error("error while trying to get synapse asset `airdrop.png`")
+                    warn("error while trying to get synapse asset `airdrop.png`")
                 end
                 local markerColors = global.registry.markerColors
                 local worldmarker = client.modules.worldMarker
@@ -12552,7 +12552,7 @@ local function loadup()
             local function footballMarker()
                 local image = getsynasset("icetray/resource/football.png")
                 if not image then
-                    error("error while trying to get synapse asset `football.png`")
+                    warn("error while trying to get synapse asset `football.png`")
                 end
                 local markerColors = global.registry.markerColors
                 local worldmarker = client.modules.worldMarker
@@ -12701,7 +12701,7 @@ local function loadup()
             local function npcsMarker()
                 local image = getsynasset("icetray/resource/robot.png")
                 if not image then
-                    error("error while trying to get synapse asset `robot.png`")
+                    warn("error while trying to get synapse asset `robot.png`")
                 end
                 local markerColors = global.registry.markerColors
                 local worldmarker = client.modules.worldMarker
